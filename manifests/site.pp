@@ -5,7 +5,6 @@ node 'master.puppet.vm' {
   file { '/root/README':
     enusre  => file,
     content => $fqdn,
-    owner   => 'root',
   }
 }
 node /^web/ {
